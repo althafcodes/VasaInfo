@@ -1,0 +1,58 @@
+
+#products .head{
+  text-align: center;
+  font-family: 'Merienda One';
+  font-size: xx-large;
+}
+
+#products .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    background-color: white;
+    justify-content: space-evenly;
+    grid-gap: 20px;
+    grid-auto-rows: auto auto;
+    
+    
+    
+    
+  }
+  #products .grid-item{
+    background-color:white;
+    width: 100%;
+    height: 100%;
+    position: relative;   
+    border-radius: 5%;
+    padding-top: 5px;
+   
+  }
+
+  #products .title{
+    color: red;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: "Roboto";
+  }
+  
+  #products .grid-item .image{
+      width: 53.5%;
+      height: 40%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+   }
+    
+   #products .grid-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    }
+  
+    #products p {
+    font-size: 1rem;
+    color: blue;
+    font-family: "Roboto";
+    text-align: justify;
+    padding: 0 5.5px 0 5.5px;
+  }

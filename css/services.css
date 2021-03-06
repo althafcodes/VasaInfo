@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Float four columns side by side */
+  #services .column {
+    float: left;
+    width: 33%;
+    padding: 0px 50px 35px 50px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  #services .row {margin: 0 -5px; height:33%;}
+
+  #services {
+    background-image: linear-gradient(to right,#A6C1EE,#FBC3EC);
+  }
+  /* Clear floats after the columns */
+  #services .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    #services .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  #services .title{
+      color:red;
+  }
+  #services .content{
+      color:blue;
+      text-align: justify;
+  }
+
+  #services .head{
+    text-align: center;
+    font-family: 'Merienda One';
+    font-size: xx-large;
+  }
+  
+  /* Style the counter cards */
+    #services .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    
+  }
+
+  #services .card:hover{
+      -ms-transform: scale(1.18); /* IE 9 */
+      -webkit-transform: scale(1.18); /* Safari 3-8 */
+      transform: scale(1.18); 
+      }
+  
+      #services .icon{
+        width: 100%;
+    max-height: 20vw;
+  }
+  
